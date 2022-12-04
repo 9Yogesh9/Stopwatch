@@ -2,3 +2,13 @@ body{
     background-color: black;
     color: white;
 }
+
+/* Page Divider */
+.g-col-md-4{
+    height: 33vh;
+}
+
+/* Main Container */
+.main_container{
+    height: 100%;
+}
