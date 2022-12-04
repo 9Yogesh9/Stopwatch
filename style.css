@@ -8,7 +8,28 @@ body{
     height: 33vh;
 }
 
+/* Header styling */
+.app_header{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
 /* Main Container */
 .main_container{
     height: 100%;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+/* timer container */
+.timer_container{
+    height: 80%;
+    border:1px solid rgb(255, 0, 221);
+}
+
+/* stopwatch controls */
+.stopwatch_controls{
+    height: 20%;    
+    border:1px solid orange;
 }
