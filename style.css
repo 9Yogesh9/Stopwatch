@@ -17,6 +17,8 @@ body{
 /* Header styling */
 .app_header{
     letter-spacing: 5.7vw;
+    /* text-shadow: 1px -6px 8px #df0e0e; */
+    text-shadow: -15px 13px 17px #df0e0e;
 }
 
 /* Main Container */
