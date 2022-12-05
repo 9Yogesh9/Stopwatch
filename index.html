@@ -12,7 +12,6 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
     <title>StopWatch</title>
 </head>
 
@@ -20,67 +19,49 @@
     <div class="grid text-center">
         <!-- Heading -->
         <div class="g-col-6 g-col-md-4 heading_container">
-            <h1 class="display-1 app_header">StopWatch</h1>
+            <h1 class="display-1 app_header">StOpWaTcH</h1>
         </div>
         <div class="g-col-6 g-col-md-4">
             <!-- Main StopWatch Container -->
             <div class="container main_container">
                 <!-- Timer containers -->
                 <div class="container text-center timer_container">
+                    <!-- Timer Display and Segments handling -->
                     <h1 class="display-1 timer_display">
-                        <span>00</span>
+                        <span class="segments" id="hour">00</span>
                         <span>:</span>
-                        <span>00</span>
+                        <span class="segments" id="minute">00</span>
                         <span>:</span>
-                        <span>00</span>
+                        <span class="segments" id="second">00</span>
                         <span>:</span>
-                        <span>00</span>
+                        <span class="segments" id="millisecond">00</span>
                     </h1>
+                    <!-- Timer Labels -->
                     <div class="timer_information">
                         <span>Hour</span>
-                        <!-- <span>|</span> -->
                         <span>Minute</span>
-                        <!-- <span>|</span> -->
                         <span>Second</span>
-                        <!-- <span>|</span> -->
                         <span>Millisecond</span>
                     </div>
-
-                    <!-- <div class="row">
-                        <div class="col">
-                            Column
-                        </div>
-                        <div class="col">
-                            Column
-                        </div>
-                        <div class="col">
-                            Column
-                        </div>
-                        <div class="col">
-                            Column
-                        </div>
-                    </div> -->
                 </div>
                 <!-- Button Container -->
                 <div class="container text-center stopwatch_controls">
                     <div class="row">
                         <div class="col">
-                            <button type="button" class="btn btn-success btn-lg" id="start_pause_button">Start</button>
+                            <button type="button" class="btn btn-success btn-lg" id="start_pause_button" onclick="startTimer()">Start</button>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-danger btn-lg" id="stop_button">Stop</button>
+                            <button type="button" class="btn btn-danger btn-lg" id="stop_button" onclick="stopTimer()">Stop</button>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-primary btn-lg" id="reset_button">Reset</button>
+                            <button type="button" class="btn btn-primary btn-lg" id="reset_button" onclick="clearTimer()">Reset</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="g-col-6 g-col-md-4"></div>
         </div>
-        <!-- <div class="container">
-        <h1>Welcome to Coding World !</h1>
-    </div> -->
+    <script src="scripts.js"></script>
 </body>
 
 </html>
