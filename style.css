@@ -48,6 +48,7 @@ body {
 .timer_container {
     height: 80%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border: 1px solid rgb(255, 0, 221);
@@ -58,6 +59,17 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.timer_information{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.timer_information span{
+    width: 100%;
+    background-color: blueviolet;
 }
 
 /* stopwatch controls */
@@ -73,7 +85,7 @@ body {
         /* display: block; */
     }
     
-    .app_header{
-        /* margin-left: 0px; */
-    }
+    /* .app_header{
+        margin-left: 0px;
+    } */
   }
