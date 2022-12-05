@@ -1,41 +1,74 @@
-body{
-    background-color: black;
-    color: white;
+:root {
+    /* Dark theme
+    --primary-color:black;
+    --secondary-color:white; 
+    --header-shadow:-4px 6px 9px #df0e0e  */
+
+    /*beta dark shadow 
+    --header-shadow:-15px 13px 17px #df0e0e */
+
+    /* Light Theme */
+    --primary-color: white;
+    --secondary-color: black;
+    --header-shadow: -4px 6px 9px #837a7a;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* Page Divider */
-.g-col-md-4{
+.g-col-md-4 {
     height: 33vh;
 }
 
-.heading_container{
+.heading_container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Header styling */
-.app_header{
+.app_header {
     letter-spacing: 5.7vw;
     /* text-shadow: 1px -6px 8px #df0e0e; */
-    text-shadow: -15px 13px 17px #df0e0e;
+    text-shadow: var(--header-shadow);
 }
 
 /* Main Container */
-.main_container{
+.main_container {
     height: 100%;
     border: 1px solid red;
     border-radius: 5px;
 }
 
 /* timer container */
-.timer_container{
+.timer_container {
     height: 80%;
-    border:1px solid rgb(255, 0, 221);
+    border: 1px solid rgb(255, 0, 221);
 }
 
 /* stopwatch controls */
-.stopwatch_controls{
-    height: 20%;    
-    border:1px solid orange;
+.stopwatch_controls {
+    height: 20%;
+    border: 1px solid orange;
+}
+
+#start_pause_button {
+    background-color: #1d7a1e;
+    border-color: #1d7a1e;
+}
+
+#start_pause_button:hover {
+    background-color: #23a425;
+}
+
+#stop_button {
+    background-color: #c92828;
+    border-color: #c92828;
+}
+
+#stop_button:hover {
+    background-color: #e81a1a;
 }
