@@ -1,5 +1,3 @@
-// console.log("Javascript Connected !");
-
 //Object to hold and supply time data to all functions
 let timeMonitor = {};
 
@@ -82,7 +80,7 @@ function displayTimer() {
 }
 
 function startTimer() {
-    
+
     // Note the start time
     timeMonitor.start_time = new Date().getTime();
 
@@ -112,4 +110,8 @@ function clearTimer() {
     minute.innerHTML = `<span>00</span>`;
     second.innerHTML = `<span>00</span>`;
     millisecond.innerHTML = `<span>00</span>`;
+}
+
+function theme_change() {
+    document.body.classList.toggle('darktheme');
 }
