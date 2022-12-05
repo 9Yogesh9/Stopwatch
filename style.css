@@ -1,16 +1,17 @@
 :root {
-    /* Dark theme
+    /* Dark theme */
     --primary-color:black;
     --secondary-color:white; 
-    --header-shadow:-4px 6px 9px #df0e0e  */
+    --header-shadow:-4px 6px 9px #df0e0e ;
+    --min_width_containers:420px;
 
     /*beta dark shadow 
     --header-shadow:-15px 13px 17px #df0e0e */
 
     /* Light Theme */
-    --primary-color: white;
+    /* --primary-color: white;
     --secondary-color: black;
-    --header-shadow: -4px 6px 9px #837a7a;
+    --header-shadow: -4px 6px 9px #837a7a; */
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 /* Header styling */
 .app_header {
     letter-spacing: 5.7vw;
-    /* text-shadow: 1px -6px 8px #df0e0e; */
+    margin-left: 5rem;
     text-shadow: var(--header-shadow);
 }
 
@@ -46,29 +47,33 @@ body {
 /* timer container */
 .timer_container {
     height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 1px solid rgb(255, 0, 221);
+    min-width: var(--min_width_containers);
+}
+
+.timer_display{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* stopwatch controls */
 .stopwatch_controls {
     height: 20%;
     border: 1px solid orange;
+    min-width: var(--min_width_containers);
 }
 
-#start_pause_button {
-    background-color: #1d7a1e;
-    border-color: #1d7a1e;
-}
-
-#start_pause_button:hover {
-    background-color: #23a425;
-}
-
-#stop_button {
-    background-color: #c92828;
-    border-color: #c92828;
-}
-
-#stop_button:hover {
-    background-color: #e81a1a;
-}
+@media only screen and (max-width: 850px) {
+    .heading_container{
+        width: 100%;
+        /* display: block; */
+    }
+    
+    .app_header{
+        /* margin-left: 0px; */
+    }
+  }
