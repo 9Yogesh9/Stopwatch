@@ -1,5 +1,7 @@
 //Object to hold and supply time data to all functions
-let timeMonitor = {};
+timeMonitor = {};
+
+timeMonitor.ifStarted = false;
 
 // Anchor to specific IDs
 let hour = document.getElementById("hour");
@@ -81,28 +83,34 @@ function displayTimer() {
 
 function startTimer() {
 
-    // Note the start time
-    timeMonitor.start_time = new Date().getTime();
+    if (!timeMonitor.ifStarted) {
+        // Note the start time
+        timeMonitor.start_time = new Date().getTime();
 
-    // Handles if timer was already intialized
-    if (timeMonitor.time_differ > 0) {
-        timeMonitor.start_time = timeMonitor.start_time - timeMonitor.time_differ;
+        // Handles if timer was already intialized
+        if (timeMonitor.time_differ > 0) {
+            timeMonitor.start_time = timeMonitor.start_time - timeMonitor.time_differ;
+        }
+
+        // Update the display after every 10 millisecond and saving timer ID to manipulate later
+        timeMonitor.timer_id = setInterval(function () {
+            displayTimer()
+        }, 10);
+
+        timeMonitor.ifStarted = true;
     }
-
-    // Update the display after every 10 millisecond and saving timer ID to manipulate later
-    timeMonitor.timer_id = setInterval(function () {
-        displayTimer()
-    }, 10);
 }
 
 function stopTimer() {
     // Pause the timer
+    timeMonitor.ifStarted = false;
     clearInterval(timeMonitor.timer_id);
 }
 
 function clearTimer() {
     //Making new start
     clearInterval(timeMonitor.timer_id);
+    timeMonitor.ifStarted = false;
     timeMonitor.time_differ = 0;
 
     // Reset timer segments to zero

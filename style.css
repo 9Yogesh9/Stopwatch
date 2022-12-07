@@ -69,9 +69,9 @@ body {
     border-radius: 5px;
 }
 
-.middle_container {
+/* .middle_container {
     background-image: var(--timer_container_bg);
-}
+} */
 
 /* timer container */
 .timer_container {
@@ -82,7 +82,7 @@ body {
     justify-content: space-around;
     border-radius: var(--box-radius);
     box-shadow: var(--box-shadow-light);
-    /* background-image: var(--timer_container_bg); */
+    background-image: var(--timer_container_bg);
     /* border: 1px solid rgb(255, 0, 221); */
     min-width: var(--min_width_containers);
 }
