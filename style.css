@@ -1,6 +1,6 @@
 :root {
     /* Common for both themes */
-    --min_width_containers: 420px;
+    --min_width_containers: 400px;
 
     /*beta dark shadow 
     --header-shadow:-15px 13px 17px #df0e0e */
@@ -19,8 +19,7 @@
     --secondary-color: white;
     --header-shadow: -4px 6px 9px #df0e0e;
     --timer_container_bg: linear-gradient(180deg, #00000085, #69a1d8ad, #69a1d847, #00000085);
-    --box-shadow-light: none;
-    --box-radius:0px;
+    --box-shadow-light: 0px 0px 10px 2px #212020a1;;
 }
 
 body {
