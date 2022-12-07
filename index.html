@@ -13,6 +13,7 @@
         crossorigin="anonymous"></script>
     <!-- Font awesome linked
     <script src="https://kit.fontawesome.com/1038d40961.js" crossorigin="anonymous"></script> -->
+    <link rel="shortcut icon" href="assests/clock-regular.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>StopWatch</title>
 </head>
@@ -26,7 +27,7 @@
         <div class="g-col-6 g-col-md-4 heading_container">
             <h1 class="display-1 app_header">StOpWaTcH</h1>
         </div>
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6 g-col-md-4 middle_container">
             <!-- Main StopWatch Container -->
             <div class="container main_container">
                 <!-- Timer containers -->
@@ -53,15 +54,18 @@
                 <div class="container text-center stopwatch_controls">
                     <div class="row">
                         <div class="col">
-                            <button type="button" class="btn btn-success btn-lg" id="start_pause_button"
+                            <!-- <button type="button" class="btn btn-success btn-lg" id="start_pause_button" -->
+                            <button type="button" class="btn bton btn-success" id="start_pause_button"
                                 onclick="startTimer()">Start</button>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-danger btn-lg" id="stop_button"
+                            <!-- <button type="button" class="btn btn-danger btn-lg" id="stop_button" -->
+                            <button type="button" class="btn bton btn-danger" id="stop_button"
                                 onclick="stopTimer()">Stop</button>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-primary btn-lg" id="reset_button"
+                            <!-- <button type="button" class="btn btn-primary btn-lg" id="reset_button" -->
+                            <button type="button" class="btn bton btn-primary" id="reset_button"
                                 onclick="clearTimer()">Reset</button>
                         </div>
                     </div>
