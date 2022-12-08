@@ -33,9 +33,6 @@ body {
 /* Theme icon button */
 #theme_switch {
     width: 40px;
-    /* position: absolute;
-    right: 1vw;
-    top: 1vw; */
     padding: 0;
     border: 0;
     border: 3px solid white;
@@ -59,14 +56,12 @@ body {
 .app_header {
     letter-spacing: 5.7vw;
     margin-left: 5rem;
-    /* padding-left: 2rem; */
     text-shadow: var(--header-shadow);
 }
 
 /* Main Container */
 .main_container {
     height: 100%;
-    /* border: 1px solid red; */
     border-radius: 5px;
 }
 
@@ -125,8 +120,4 @@ body {
     .heading_container {
         width: 100%;
     }
-
-    /* .app_header{
-        font-size: 2em;
-    } */
 }
