@@ -2,9 +2,6 @@
     /* Common for both themes */
     --min_width_containers: 400px;
 
-    /*beta dark shadow 
-    --header-shadow:-15px 13px 17px #df0e0e */
-
     /* Light Theme */
     --primary-color: white;
     --secondary-color: black;
@@ -17,9 +14,7 @@
     /* Dark theme */
     --primary-color: black;
     --secondary-color: white;
-    /* --header-shadow: -4px 6px 9px #df0e0e; */
     --header-shadow: -5px 0px 4px #4315d7, 2px -1px 4px #ff0000;
-    /* --timer_container_bg: linear-gradient(180deg, #00000085, #69a1d8ad, #69a1d847, #00000085); */
     --timer_container_bg: linear-gradient(180deg, #000000, #4315d74d, #69a1d847, #000000);
     --box-shadow-light: 0px 0px 10px 2px #212020a1;
 }
@@ -29,23 +24,27 @@ body {
     color: var(--secondary-color);
 }
 
+.theme_holder{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
 /* Theme icon button */
 #theme_switch {
     width: 40px;
-    position: absolute;
+    /* position: absolute;
     right: 1vw;
-    top: 1vw;
+    top: 1vw; */
     padding: 0;
     border: 0;
     border: 3px solid white;
     outline: none;
     border-radius: 25px;
-    /* testing on mobile */
-    /* background-image: radial-gradient(transparent, #181616); */
     background-blend-mode: color-burn;
 }
 
-/* Page Divider */
+/* Major Page Divider */
 .g-col-md-4 {
     height: 33vh;
 }
@@ -59,7 +58,8 @@ body {
 /* Header styling */
 .app_header {
     letter-spacing: 5.7vw;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
+    padding-left: 2rem;
     text-shadow: var(--header-shadow);
 }
 
@@ -70,11 +70,7 @@ body {
     border-radius: 5px;
 }
 
-/* .middle_container {
-    background-image: var(--timer_container_bg);
-} */
-
-/* timer container */
+/* timer container  Digits + Labels */
 .timer_container {
     height: 80%;
     display: flex;
@@ -84,20 +80,22 @@ body {
     border-radius: var(--box-radius);
     box-shadow: var(--box-shadow-light);
     background-image: var(--timer_container_bg);
-    /* border: 1px solid rgb(255, 0, 221); */
     min-width: var(--min_width_containers);
 }
 
+/* Timer Digit Display */
 .timer_display {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
+/* Each segment of time */
 .segments {
     width: 30%;
 }
 
+/* Timer Labels container */
 .timer_information {
     width: 100%;
     display: flex;
@@ -108,28 +106,27 @@ body {
     width: 100%;
 }
 
-/* stopwatch controls */
+/* Stopwatch controls */
 .stopwatch_controls {
     height: 20%;
-    /* border: 1px solid orange; */
     margin-top: 24px;
     min-width: var(--min_width_containers);
 }
 
-/* buttons */
+/* Buttons */
 .bton {
     border-radius: 25px;
     width: 5.3rem;
     box-shadow: -2px 4px 10px 1px #000000a6;
 }
 
+/* To adjust the heading on small screen */
 @media only screen and (max-width: 850px) {
     .heading_container {
         width: 100%;
-        /* display: block; */
     }
 
-    /* .app_header{
-        margin-left: 0px;
-    } */
+    .app_header{
+        font-size: 2em;
+    }
 }

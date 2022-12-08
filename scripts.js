@@ -1,6 +1,7 @@
 //Object to hold and supply time data to all functions
 timeMonitor = {};
 
+// Added to monitor if already the timer event is running
 timeMonitor.ifStarted = false;
 
 // Anchor to specific IDs

@@ -20,9 +20,12 @@
 
 <body>
     <div class="grid text-center">
-        <button id="theme_switch" onclick="theme_change()">
-            <img src="./assests/theme_button.svg" alt="theme icon">
-        </button>
+        <!-- Theme container -->
+        <div class="theme_holder">
+            <button id="theme_switch" onclick="theme_change()">
+                <img src="./assests/theme_button.svg" alt="theme icon">
+            </button>
+        </div>
         <!-- Heading -->
         <div class="g-col-6 g-col-md-4 heading_container">
             <h1 class="display-1 app_header">StOpWaTcH</h1>
@@ -54,23 +57,21 @@
                 <div class="container text-center stopwatch_controls">
                     <div class="row">
                         <div class="col">
-                            <!-- <button type="button" class="btn btn-success btn-lg" id="start_pause_button" -->
                             <button type="button" class="btn bton btn-success" id="start_pause_button"
                                 onclick="startTimer()">Start</button>
                         </div>
                         <div class="col">
-                            <!-- <button type="button" class="btn btn-danger btn-lg" id="stop_button" -->
                             <button type="button" class="btn bton btn-danger" id="stop_button"
                                 onclick="stopTimer()">Stop</button>
                         </div>
                         <div class="col">
-                            <!-- <button type="button" class="btn btn-primary btn-lg" id="reset_button" -->
                             <button type="button" class="btn bton btn-primary" id="reset_button"
                                 onclick="clearTimer()">Reset</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Dummy container -->
             <div class="g-col-6 g-col-md-4"></div>
         </div>
         <script src="scripts.js"></script>
