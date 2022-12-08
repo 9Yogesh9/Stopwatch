@@ -58,8 +58,8 @@ body {
 /* Header styling */
 .app_header {
     letter-spacing: 5.7vw;
-    /* margin-left: 5rem; */
-    padding-left: 2rem;
+    margin-left: 5rem;
+    /* padding-left: 2rem; */
     text-shadow: var(--header-shadow);
 }
 
@@ -126,7 +126,7 @@ body {
         width: 100%;
     }
 
-    .app_header{
+    /* .app_header{
         font-size: 2em;
-    }
+    } */
 }
